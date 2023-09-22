@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:3.1 as build
 WORKDIR /app
-copy *.dev/bin ./
+copy *.csproj./
 RUN dotnet restore
 
 COPY . ./
